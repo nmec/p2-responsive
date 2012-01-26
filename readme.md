@@ -21,9 +21,12 @@ The parent P2 theme serves an additional stylesheet to visitors with iPhone http
 
 It will work fine without this modification but it won't appear as it was designed it to on iPhones.
 
+## Demo
+
+See the theme in action [p2.nmecdesign.com](http://p2.nmecdesign.com/) 
+
 ## To-do
 
-- Setup demo site
 - Test on more mobile devices
 - Test on old browsers (boo, IE)
 - Integrate with parent theme
