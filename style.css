@@ -1,0 +1,210 @@
+/*
+Theme Name:     Responsive P2
+Theme URI:      http: //example.com/
+Description:    Responsive child theme for P2 
+Author:         Jonathan Warren
+Author URI:     http: //nmecdesign.com/
+Template:       p2
+Version:        1.0
+*/
+
+@import url("../p2/style.css");
+
+/* Mobile layout first */
+
+body {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#header {
+	min-height: 0;
+}
+
+#wrapper {
+	background: white;
+}
+
+#wrapper, #header, #footer {
+	width: auto;
+}
+
+.sleeve_main {
+	margin-right: 0;
+}
+
+#postbox input#posttitle, 
+#postbox input#postcitation,
+#postbox textarea#posttext, textarea.posttext {
+	width: 96%;
+}
+
+#sidebar {
+	float: none;
+	width: auto;
+	background: #f7f7f7;
+}
+
+#postlist {
+	clear: both;
+}
+
+/* Make use of much space as possible on smaller screens */
+.postcontent {
+	padding-left: 0;
+}
+
+#main .actions {
+	float: right;
+	position: relative;
+}
+
+#main ul.commentlist {
+	margin-left: 0;	
+}
+
+.meta abbr {
+	display: block;
+}
+
+.tags br {
+	display: none;
+}
+
+/* Makes images responsive. Using 99% so images still have padding when wrapped with a caption */
+.hentry img,
+#sidebar img {
+	max-width: 99%;
+	height: auto;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports 480px and under go here */
+  	
+  	#header .sleeve {
+  		padding: 0;
+  		margin: 0;
+  		width: 100%;
+  	}
+  
+	#header {
+		font-size: 80%;
+	}
+	
+	#media-buttons {
+		display: none;
+	}
+	
+	.controls {
+		display: none;
+	}
+	
+	#postbox {
+		background: #f1f1f1;
+		min-height: 210px;
+	}
+	
+	#postbox .avatar {
+		display: none;
+	}
+	
+	#post-types {
+		margin-left: 0;
+		font-size: 9px;
+		padding-top: 4px;
+	}
+	
+	#postbox .inputarea {
+		padding-left: 0;
+	}
+	
+	#postbox input#tags {
+		width: 96%;
+	}
+	
+	#main #respond, .textedit {
+		margin-left: 0;
+		padding: 5px;
+	}
+	
+	#help,
+	#notify {
+		width: 70%;
+		left: 32%;
+		top: 15%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+	
+	body {
+		width: 90%;
+	}
+	
+	/* Responsive faux columns: http://www.alistapart.com/articles/fluid-images/ */
+	#wrapper {
+		background: white url(img/responsive-bg.png) repeat-y 75.6446217% 0;
+	}
+		
+	.sleeve_main {
+		width: 75%;
+		overflow: hidden;
+		float: left;
+	}
+	
+	.controls {
+		display: inline;
+	}
+
+	#sidebar {
+		float: right;
+		width: 21.6%;
+		background: none;
+	}
+	
+	.meta abbr {
+		display: inline;
+	}
+	
+	.tags br {
+		display: block;
+	}
+	
+	.postcontent {
+		padding-left: 60px;
+	}
+	
+	.actions {
+		visibility: hidden;
+	}
+	
+	.post:hover .actions {
+		visibility: visible;
+	}
+	
+	#main ul.commentlist {
+		margin-left: 60px;	
+	}
+	
+	/* Goes off the screen on smaller displays */
+	#help {
+		top: 30%;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1040px) {
+	#searchform input {
+		display: block;
+		float: none;
+	}
+	
+	#searchform #searchsubmit {
+		width: 40%;
+		height: 20px;
+		margin: 0;
+	}
+}
