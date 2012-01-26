@@ -34,10 +34,6 @@ function mytheme_caption( $attr, $content = null ) {
 add_shortcode( 'wp_caption', 'mytheme_caption' );
 add_shortcode( 'caption', 'mytheme_caption' ); 
 
-// Empty iPhone function so additional stylesheet isn't loaded.
-// function iphone_css() { }
-
-
 // Rewriten p2_comments with span.actions at the bottom
 function p2_responsive_comments( $comment, $args ) {
 	$GLOBALS['comment'] = $comment;
