@@ -1,8 +1,8 @@
 # Responsive P2
 
-A fluid and responsive child theme for P2. 
+A fluid and responsive child theme for [P2](http://p2theme.com/). 
 
-I've tried to do as much as possible with CSS but there are a few things that had to be moved around in the markup:
+I've tried to do as much as possible with CSS but there are a few things that had to be moved around in the markup, plus a bit of JS magic:
 
 - `comments.php` rename the comments function so it could be modified:
 	- `p2_responsive_comments` place span.actions at the end of comments so it responds nicely.
@@ -17,4 +17,14 @@ I've tried to do as much as possible with CSS but there are a few things that ha
 
 ## P2 Modifications - Important
 
-The parent P2 theme serves an additional stylesheet to visitors with iPhone http headers, unfortunately there's no way to change this from the child-theme so either **delete** or **comment out** lines 443-453 in `p2/functions.php`
+The parent P2 theme serves an additional stylesheet to visitors with iPhone http headers, unfortunately there's no way to change this from the child-theme so either **delete** or **comment out** lines 443-453 in `p2/functions.php`. 
+
+It will work fine without this modification but it won't appear as it was designed it to on iPhones.
+
+## To-do
+
+- Setup demo site
+- Test on more mobile devices
+- Test on old browsers (boo, IE)
+- Integrate with parent theme
+- Tidy and optimise CSS
