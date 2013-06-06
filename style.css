@@ -10,6 +10,12 @@ Version:        1.0
 
 @import url("../p2/style.css");
 
+/* max-width on html, excessive width causing rendering issues */
+html {
+	max-width: 1171px;
+	margin: 0 auto;
+}
+
 /* Mobile layout first */
 
 body {
