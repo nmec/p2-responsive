@@ -86,4 +86,11 @@ function p2_responsive_comments( $comment, $args ) {
 	<?php
 }
 
+// remove iPhone styles from original P2
+// explained here: http://wpguru.co.uk/2013/10/how-to-override-a-parent-function-from-your-child-theme/
+function p2_responsive_remove_iPhone () {
+	remove_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
+}
+add_action( 'after_setup_theme', 'p2_responsive_remove_iPhone' );
+
 ?>
