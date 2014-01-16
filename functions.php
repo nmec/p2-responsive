@@ -9,7 +9,7 @@ function p2_responsive_js() {
 }
 
 
-// Enable Figure + FigCaption for images and remove width style from caption so it responds well. 
+// Enable Figure + FigCaption for images and remove width style from caption so it responds well.
 function mytheme_caption( $attr, $content = null ) {
     $output = apply_filters( 'img_caption_shortcode', '', $attr, $content );
     if ( $output != '' )
@@ -32,7 +32,7 @@ function mytheme_caption( $attr, $content = null ) {
 }
 
 add_shortcode( 'wp_caption', 'mytheme_caption' );
-add_shortcode( 'caption', 'mytheme_caption' ); 
+add_shortcode( 'caption', 'mytheme_caption' );
 
 // Rewriten p2_comments with span.actions at the bottom
 function p2_responsive_comments( $comment, $args ) {
@@ -61,7 +61,7 @@ function p2_responsive_comments( $comment, $args ) {
 			<?php echo get_comment_author_link(); ?>
 			<span class="meta">
 				<?php echo p2_date_time_with_microformat( 'comment' ); ?>
-				
+
 			</span>
 		</h4>
 		<div id="commentcontent-<?php comment_ID(); ?>" class="<?php echo esc_attr( $content_class ); ?>"><?php
@@ -70,7 +70,7 @@ function p2_responsive_comments( $comment, $args ) {
 				if ( $comment->comment_approved == '0' ): ?>
 					<p><em><?php esc_html_e( 'Your comment is awaiting moderation.', 'p2' ); ?></em></p>
 				<?php endif; ?>
-				
+
 				<span class="actions">
 					<a href="<?php echo esc_url( get_comment_link() ); ?>"><?php _e( 'Permalink', 'p2' ); ?></a>
 					<?php
@@ -82,7 +82,7 @@ function p2_responsive_comments( $comment, $args ) {
 					?>
 				</span>
 		</div>
-		
+
 	<?php
 }
 

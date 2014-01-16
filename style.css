@@ -1,7 +1,7 @@
 /*
 Theme Name:     Responsive P2
 Theme URI:      https://github.com/nmec/Responsive-P2
-Description:    Responsive child theme for P2 
+Description:    Responsive child theme for P2
 Author:         Jonathan Warren
 Author URI:     http://nmecdesign.com/
 Template:       p2
@@ -39,7 +39,7 @@ body {
 	margin-right: 0;
 }
 
-#postbox input#posttitle, 
+#postbox input#posttitle,
 #postbox input#postcitation,
 #postbox textarea#posttext, textarea.posttext {
 	width: 96%;
@@ -66,7 +66,7 @@ body {
 }
 
 #main ul.commentlist {
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 .meta abbr {
@@ -88,53 +88,53 @@ body {
 
 @media only screen and (max-width: 480px) {
   /* Style adjustments for viewports 480px and under go here */
-  	
+
   	#header .sleeve {
   		padding: 0;
   		margin: 0;
   		width: 100%;
   	}
-  
+
 	#header {
 		font-size: 80%;
 	}
-	
+
 	#media-buttons {
 		display: none;
 	}
-	
+
 	.controls {
 		display: none;
 	}
-	
+
 	#postbox {
 		background: #f1f1f1;
 		min-height: 210px;
 	}
-	
+
 	#postbox .avatar {
 		display: none;
 	}
-	
+
 	#post-types {
 		margin-left: 0;
 		font-size: 9px;
 		padding-top: 4px;
 	}
-	
+
 	#postbox .inputarea {
 		padding-left: 0;
 	}
-	
+
 	#postbox input#tags {
 		width: 96%;
 	}
-	
+
 	#main #respond, .textedit {
 		margin-left: 0;
 		padding: 5px;
 	}
-	
+
 	#help,
 	#notify {
 		width: 70%;
@@ -145,22 +145,22 @@ body {
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-	
+
 	body {
 		width: 90%;
 	}
-	
+
 	/* Responsive faux columns: http://www.alistapart.com/articles/fluid-images/ */
 	#wrapper {
 		background: white url(img/responsive-bg.png) repeat-y 75.6446217% 0;
 	}
-		
+
 	.sleeve_main {
 		width: 75%;
 		overflow: hidden;
 		float: left;
 	}
-	
+
 	.controls {
 		display: inline;
 	}
@@ -170,36 +170,36 @@ body {
 		width: 21.6%;
 		background: none;
 	}
-	
+
 	.meta abbr {
 		display: inline;
 	}
-	
+
 	.tags br {
 		display: block;
 	}
-	
+
 	.postcontent {
 		padding-left: 60px;
 	}
-	
+
 	.actions {
 		visibility: hidden;
 	}
-	
+
 	.post:hover .actions {
 		visibility: visible;
 	}
-	
+
 	#main ul.commentlist {
-		margin-left: 60px;	
+		margin-left: 60px;
 	}
-	
+
 	/* Goes off the screen on smaller displays */
 	#help {
 		top: 30%;
 	}
-	
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1040px) {
@@ -207,7 +207,7 @@ body {
 		display: block;
 		float: none;
 	}
-	
+
 	#searchform #searchsubmit {
 		width: 40%;
 		height: 20px;

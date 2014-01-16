@@ -32,7 +32,7 @@
 			if ( ! is_page() ) {
 				echo p2_date_time_with_microformat();
 			} ?>
-			
+
 			<?php if ( ! is_page() ) : ?>
 				<span class="tags">
 					<?php tags_with_count( '', __( '<br />Tags:' , 'p2' ) .' ', ', ', ' &nbsp;' ); ?>&nbsp;
