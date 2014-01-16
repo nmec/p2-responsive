@@ -1,5 +1,7 @@
 # Responsive P2
 
+![](screenshot.jpg)
+
 A fluid and responsive child theme for [P2](http://p2theme.com/). 
 
 I've tried to do as much as possible with CSS but there are a few things that had to be moved around in the markup, plus a bit of JS magic:
