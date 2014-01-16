@@ -86,4 +86,7 @@ function p2_responsive_comments( $comment, $args ) {
 	<?php
 }
 
-?>
+add_action( 'after_setup_theme', 'p2_responsive_remove_iPhone' );
+function p2_responsive_remove_iPhone () {
+	remove_action( 'wp_enqueue_scripts', 'p2_iphone_style', 1000 );
+}
