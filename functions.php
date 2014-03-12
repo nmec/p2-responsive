@@ -2,10 +2,10 @@
 
 // Modernizr for HTML5 and media query support for older browsers
 // FitVids.js for responsive embedded videos
-add_action('wp_enqueue_scripts', 'p2_responsive_js');
+add_action( 'wp_enqueue_scripts', 'p2_responsive_js' );
 function p2_responsive_js() {
-	wp_enqueue_script('Modernizr', get_template_directory_uri() .'../../p2-responsive/js/modernizr.min.js', '', '2.0.6');
-	wp_enqueue_script('FitVids', get_template_directory_uri() .'../../p2-responsive/js/jquery.fitvids.js', array('jquery'), '1.0');
+	wp_enqueue_script( 'Modernizr', get_stylesheet_directory_uri() . '/js/modernizr.min.js', '', '2.0.6');
+	wp_enqueue_script( 'FitVids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.0' );
 }
 
 
